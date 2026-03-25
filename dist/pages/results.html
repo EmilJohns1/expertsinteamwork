@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+  <script type="module" crossorigin src="/assets/result-D_ZkKN6E.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-Cf3xff8G.js">
+  <link rel="stylesheet" crossorigin href="/assets/global-C731qqUL.css">
+</head>
+<body>
+
+<section class="hero" id="hero">
+    <div class="card">
+        <div id="emoji-display" class="emoji-display"></div>
+        
+        <h1 id="score-header"></h1>
+        <p id="score-message"></p>
+
+        <button id="retry-btn" class="btn primary">Retry Quiz</button>
+        <button id="ainclusion-btn" class="btn gradient">AINCLUSION</button>
+        <button id="leaderboard-btn" class="btn primary">Show Leaderboard</button>
+    </div>
+</section>
+
+<!-- Leaderboard Modal -->
+<div id="leaderboard-modal" class="modal-overlay">
+    <div class="modal-content">
+        <button id="close-leaderboard" class="close-btn">&times;</button>
+        <h2>Top 10 Leaderboard</h2>
+        <ul id="leaderboard-list" class="leaderboard-list"></ul>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+</body>
+</html>

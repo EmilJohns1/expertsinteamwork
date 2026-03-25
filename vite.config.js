@@ -1,9 +1,17 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 
 export default defineConfig({
-  root: 'src', // This makes 'src' the root directory
-  envDir: '../', // This allows Vite to find the .env file in the project root
+  root: 'src',
+  envDir: '../',
   build: {
-    outDir: '../dist', // This ensures your build goes to the right place
+    outDir: '../dist',
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'src/index.html'),
+        quiz: resolve(__dirname, 'src/pages/quiz.html'),
+        result: resolve(__dirname, 'src/pages/results.html')
+      }
+    }
   }
 })
