@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which LLM Generated This Image?</title>
+    <link rel="stylesheet" href="../css/quiz.css">
+    <link rel="stylesheet" href="../css/quiz-info-card.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 id="questionText"></h1>
+        <div class="progress" id="progress"></div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <p class="progress-text" id="progressText"></p>
+
+        <div class="content">
+            <div class="image-box">
+                <img id="quizImage" src="" alt="Generated Image">
+            </div>
+        </div>
+
+        <div class="answers">
+            <!-- populated dynamically by quiz.js -->
+        </div>
+
+        <button class="next-btn" id="nextBtn">Next</button>
+    </div>
+
+    <script src="../js/quiz.obf.js"></script>
+</body>
+</html>
