@@ -86,7 +86,7 @@ const questions = [
   {
     type: "reveal",
     question: "What do you think a 'paralympics athlete' looks like?",
-    image: "../images/paralympic/paralympics_athlete_grok_3.jpg", // fallback bg
+    image: "../images/paralympic/Paralympics_athlete_grok_3.jpg", // fallback bg
     images: [
       // Add up to 30 images from your paralympics folder here, e.g.:
       {
